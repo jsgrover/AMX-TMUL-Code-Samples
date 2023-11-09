@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "immintrin.h": "c",
+        "avx512dqintrin.h": "c",
+        "tmmintrin.h": "c",
+        "iostream": "cpp"
+    }
+}
