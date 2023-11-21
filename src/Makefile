@@ -1,4 +1,4 @@
-CFLAG = -O2 -march=native -fno-strict-aliasing -std=c++17 -masm=intel
+CFLAG = -fopenmp  -march=native -std=c++23  -g -lstdc++ -Wall
 CC = gcc 
 BIN = test-amxtile 
 CFILES =test-amxtile.cpp

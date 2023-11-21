@@ -3,13 +3,18 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc build active file",
-            "command": "/usr/bin/gcc",
+            "command": "/opt/rh/gcc-toolset-13/root/usr/bin/gcc",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-std=c++23",
+                "-O2",
+                "-march=native",
+                "-fno-strict-aliasing"
+
             ],
             "options": {
                 "cwd": "${fileDirname}"
